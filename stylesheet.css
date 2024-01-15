@@ -1,0 +1,97 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+header{
+    height: 768px;
+    border: 4px solid springgreen;
+}
+
+/*Nav Bar Styling */
+ul li{
+    list-style-type: none;
+    
+    display: inline-block;
+    margin-right: 37px;
+}
+nav{
+    height: 97px;
+    margin-bottom: 83px;
+}
+nav #logo{
+    text-align: left;
+    margin-top: 37px;
+    margin-left: 37px;
+    display: inline;
+}
+.button{
+    text-decoration: none;
+    width: 220px;
+    height: 60px;
+    background-color: #D90404;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-top: 37px;
+    overflow: hidden;
+    font-size: 0.8125em;
+    
+}
+
+/* Content Styling */
+/* Left Hand Side */
+h1{
+    font-weight: 400;
+    font-size: 3.125em;
+    margin-bottom: 7px;
+    letter-spacing: 7px;
+}
+h2{
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 7px;
+}
+h3{
+    font-weight: 200;
+    font-size: 1.5625em;
+    margin-bottom: 15px;
+    letter-spacing: 7px;
+}
+.left{
+    margin-left: 97px;
+    margin-top: 66px;
+    display: inline-block;
+}
+#browse{
+    margin-top: 40px;
+    padding-top: 7px;
+    padding-left: 40px;
+}
+#arrow{
+    float: right;
+   margin-right: 22px;
+}
+/* Right Hand Side */
+.right{
+    float: right;
+    margin-right: 87px;
+}
+.card{
+    display: inline-block;
+    width: 33%;
+    border: blue solid 2px;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+#shinchan{
+    display: block;
+    
+}
