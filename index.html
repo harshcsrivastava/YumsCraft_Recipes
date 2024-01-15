@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Recipes | Odin Project</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Recipes you should try next time.</h1>
+    <header>
+        <nav>
+            <img src="images/logos/logo.png" alt="company logo" id="logo">
+            <ul>
+                <li>Credits</li>
+                <li><button class="button">Contribute a Recipe</button></li>
+            </ul>
+        </nav>
+
+        <div class="left">
+                <h1>From <span style="color: #F2AF5C;">Pantry</span> to <span style="color: #D90404;">Palate</span></h1>
+                <h3>Discover Culinary Bliss at</h3>
+                <h2><span style="color: #D90404;">YUMSCRAFT.com</span></h2>
+                <button class="button" id="browse">Browse Now <span id="arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span></button>
+        </div>
+        <div class="right">
+            <img src="./images/headerimg.png" alt="headerimage">
+        </div>
+    </header>
     <ul>
         <li><a href="./recipes/cheese-sandwich.html">Grilled Cheese Sandwich Recipes</a></li>
         <li><a href="./recipes/dalgona-coffee.html">Dalgona Coffee Recipes</a></li>
         <li><a href="./recipes/red-velvet.html">Red Velvet Cake Recipes</a></li>
     </ul>
-<img src="./images/shinchan.gif" alt="shinchan eating" width="498px">
+    <div class="card">
+        <img src="images/sandwich.jpg" alt="" width="200px">
+        <h3>Grilled Cheese Sandwich</h3>
+        <p>Everyone needs to know how to make a classic grilled cheese sandwich. Whether you're a beginner cook or an old pro, you'll come back to this top-rated grilled cheese recipe again and again.</p>
+    </div>
+<img src="./images/shinchan.gif" alt="shinchan eating" width="498px" id="shinchan">
 </body>
 </html>
