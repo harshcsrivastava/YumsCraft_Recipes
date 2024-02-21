@@ -1,36 +1,43 @@
 *{
     font-family: 'Poppins', sans-serif;
-    font-size: 100%;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
 }
 header{
-    height: 768px;
+    height: 48rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
     /* border: 4px solid springgreen; */
 }
 a{
     text-decoration: none;
     color: white;
 }
-/*Nav Bar Styling */
 ul li{
     list-style-type: none;
     display: inline-block;
-    margin-right: 37px;
 }
+/*Nav Bar Styling */
+
 nav{
-    height: 97px;
-    margin-bottom: 83px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+
 }
-nav #logo{
-    text-align: left;
-    margin-top: 37px;
-    margin-left: 37px;
-    display: inline;
+#logo{
+    width: 3.75rem;
+    height: 3.75rem;
 }
 .button{
     text-decoration: none;
-    width: 220px;
-    height: 60px;
+    width: 13.75rem;
+    height: 3.75rem;
     background-color: #D90404;
     border-radius: 30px;
     color: white;
@@ -38,51 +45,48 @@ nav #logo{
     cursor: pointer;
 }
 nav ul{
-    float: right;
-    margin-top: 37px;
-    overflow: hidden;
-    font-size: 0.8125em;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    font-size: 0.8125rem;
     
 }
 
 /* Content Styling */
+.herosection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2.5rem;
+    gap: 1rem;
+}
 /* Left Hand Side */
 h1{
     font-weight: 400;
-    font-size: 3.125em;
+    font-size: 3.125rem;
     margin-bottom: 7px;
     letter-spacing: 7px;
 }
 h2{
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     letter-spacing: 7px;
 }
 h3{
     font-weight: 200;
-    font-size: 1.5625em;
+    font-size: 1.5625rem;
     margin-bottom: 15px;
     letter-spacing: 7px;
 }
-header .left{
-    margin-left: 97px;
-    margin-top: 66px;
-    display: inline-block;
-}
 #browse{
-    margin-top: 40px;
-    padding-top: 7px;
-    padding-left: 40px;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-#arrow{
-    float: right;
-   margin-right: 22px;
-}
-/* Right Hand Side */
-header .right{
-    float: right;
-    margin-right: 87px;
-}
+
 /* Layer Second */
 section h1{
     text-align: center;
@@ -101,32 +105,45 @@ section{
     background-color: #FDF3E7;
     padding: 12px;    
     display: flex;
-    max-width: 1274px;
+    justify-content: space-around;
+    gap: 2.5rem;
     width: 100%;
-    max-height: 424px;
-    height: 100%;
-    margin-top: 28px;
-    margin-left: 83px;
-    border-radius: 22px;    
-    text-align: left;
-    position: relative;
+    height: 424px;
+    border-radius: 22px;  
+    & h2{
+        text-align: left;
+    }
 }
 .item img{
     height: auto;
     max-width: 430px;
     width: 100%;
-    margin-right: 52px;
 }
 .item .button{
     background-color: #F2AF5C;
     border-radius: 4px;
-    position: absolute;
+    /* position: absolute;
     right: 39px;
-    bottom: 40px;
+    bottom: 2.5rem; */
+}
+.toppicks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
+}
+.time_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .right{
-    display: inline-block;
-    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
 }
 .right p{
     display: inline-block;
@@ -153,24 +170,159 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 83px;
+    padding: 1.25rem 5.31rem;
     background-color: #FDF3E7;
-    margin-top: 20px;
-
+    margin-top: 1.25rem;
+    width: 100%;
 }
 footer h2{
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 .footer-left{
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 }
 .footer-left>img{
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
 }
 .socials{
     display: flex;
     justify-content: space-around;
+}
+
+/* ------------------------------- Media Query ------------------------------ */
+
+@media (width <= 1400px) {
+    html{
+        font-size: 87.5%;
+    }
+    #herosandwich{
+        width: 450px;
+    }
+}
+
+@media (width < 1094px) {
+    html{
+        font-size: 81.25%;
+    }
+    #herosandwich{
+        width: 41.25rem;
+    }
+}
+ 
+@media (width <= 945px) {
+    .item img{
+        width: 350px;
+    }
+    #herosandwich{
+        width: 380px;
+    }
+    html{
+        font-size: 69%;
+    }
+    .herosection h3{
+        font-size: 1.4rem;
+    }
+}
+@media (width <= 780px) {
+    .item img{
+        width: 300px;
+        height: 280px;
+    }
+    .item{
+        height: 100%;
+    }
+    #herosandwich{
+        width: 350px;
+    }
+    html{
+        font-size: 68%;
+    }
+    .herosection h3{
+        font-size: 1.3rem;
+    }
+}
+@media (width <= 680px) {
+    .item img{
+        width: 250px;
+    }
+    #herosandwich{
+        width: 31.25rem;
+    }
+    html{
+        font-size: 65%;
+    }
+    .herosection h3{
+        font-size: 1.25rem;
+    }
+}
+
+@media (width <= 580px) {
+    html{
+        font-size: 50%;
+    }
+    #herosandwich{
+        width: 280px;
+    }
+    .button{
+        font-size: 1.2rem;
+    }
+    #arrow{
+        scale: 0.7;
+    }
+}
+
+@media (width <= 430px) {
+    .herosection{
+        display: flex;
+        flex-direction: column;
+
+        & .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        & h1{
+            font-size: 2.6rem;
+        }
+        & #browse{
+            margin-top: 1rem;
+        }
+    }
+    header{
+        height: 100%;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+    }
+    .item img{
+        width: 100%;
+    }
+    .footer-right{
+        font-size: 1rem;
+    }
+    .socials img{
+        width: 2rem;
+    }
+}
+
+@media (width <= 376px) {
+    html{
+        font-size: 43.75%;
+    }
+    .herosection{
+        & h1{
+            font-size: 2.4rem;
+        }
+    }
+    #herosection{
+        width: 250px;
+    }
+    .item img{
+        height: 10%;
+        aspect-ratio: 3/2;
+    }
 }
